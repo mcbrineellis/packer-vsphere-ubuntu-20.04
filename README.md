@@ -30,6 +30,6 @@ Users are defined in `http/user-data`.  Subiquity takes that info and creates th
 
 Packer will use the key in `~/.ssh/id_ed25519` to connect up to the system via SSH after install to run the shell provisioner tasks.
 
-Add an ED25519 SSH public key (your system, or the CI/CD runner user) on the `sshkey` line so your system can access via passwordless login.
+Add an ED25519 SSH public key (your system, or the CI/CD runner user) under the `ssh_authorized_keys` heading for the specified user, so your system can access via passwordless login.
 
 After building this template VM, we can call Terraform, Ansible, or other scripts to secure / customize it further.
