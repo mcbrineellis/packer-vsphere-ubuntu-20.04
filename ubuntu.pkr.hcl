@@ -47,7 +47,7 @@ source "vsphere-iso" "ubuntu" {
 
     # ISO Configuration
     iso_checksum          = "file:https://releases.ubuntu.com/focal/SHA256SUMS"
-    iso_url               = "https://releases.ubuntu.com/focal/ubuntu-20.04.4-live-server-amd64.iso"
+    iso_url               = "https://releases.ubuntu.com/focal/ubuntu-20.04.5-live-server-amd64.iso"
 
     # VM Configuration
     guest_os_type         = "ubuntu64Guest"
