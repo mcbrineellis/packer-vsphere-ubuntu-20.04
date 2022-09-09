@@ -73,7 +73,7 @@ source "vsphere-iso" "ubuntu" {
 
     # Deploy to content library
     content_library_destination {
-      library = "Packer"
+      library = "${var.content_library}"
     }
 }
 
