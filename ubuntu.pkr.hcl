@@ -75,6 +75,7 @@ source "vsphere-iso" "ubuntu" {
     content_library_destination {
       library = "${var.content_library}"
       ovf = true
+      destroy = true
       description = "Version: v${local.build_version}\nBuilt on: ${local.build_date}\n${local.build_by}"
     }
 
